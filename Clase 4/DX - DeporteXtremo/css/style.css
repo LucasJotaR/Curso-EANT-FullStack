@@ -11,26 +11,60 @@ a {
 a:hover {
     color: #FF0000;
 }
-header {
+#top {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: flex-start;
     background-color: rgb(33, 33, 33);
     padding: 10px;
 }
-h1 {
+#top h1 {
     font-weight: 700;
     margin: 0;
     font-size: 1.25em;
 }
-#menu{
-    background-color: lightgreen;
-}
-#menu ul{
+#menu { margin-left: auto }
+#menu ul {
     margin: 0;
     list-style: none;
     padding: 0;
     overflow: hidden;
 }
-#menu li{
+#menu li {
     float: left;
-    width: 100px;
-    background-color: violet;
+}
+#menu ul li a {
+    display: block;
+    text-align: center;
+    padding: 5px;
+}
+#menu ul li a:hover {
+    color: rgb(33, 33, 33);
+    background-color: #d9d9d9;
+}
+#content figure {
+    margin: 0;
+}
+#content figcaption {
+    background-color: rgb(33, 33, 33);
+    height: 100px;
+    padding: 15px;
+}
+#content h2 {
+    margin: 0;
+    font-size: 36px;
+    color: #d9d9d9;
+}
+#content img {
+    display: block; 
+    width: 100%;
+}
+hr{
+    margin: 0;
+}
+.noticia {
+    padding: 10px;
+    border-bottom: solid 1px #cccccc
+
 }
