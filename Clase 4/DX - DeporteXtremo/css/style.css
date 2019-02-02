@@ -16,9 +16,21 @@ header {
     padding: 10px;
 }
 h1 {
+    font-weight: 700;
     margin: 0;
-    font-size: 32px
+    font-size: 1.25em;
 }
-hr{
+#menu{
+    background-color: lightgreen;
+}
+#menu ul{
     margin: 0;
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+}
+#menu li{
+    float: left;
+    width: 100px;
+    background-color: violet;
 }
