@@ -31,9 +31,7 @@ a:hover {
     padding: 0;
     overflow: hidden;
 }
-#menu li {
-    float: left;
-}
+#menu li { float: right}
 #menu ul li a {
     display: block;
     text-align: center;
@@ -43,28 +41,42 @@ a:hover {
     color: rgb(33, 33, 33);
     background-color: #d9d9d9;
 }
-#content figure {
+#content figure { 
+    width: 100%;
     margin: 0;
 }
 #content figcaption {
+    display: flex;
+    align-items: center;
     background-color: rgb(33, 33, 33);
     height: 100px;
-    padding: 15px;
 }
 #content h2 {
     margin: 0;
     font-size: 36px;
     color: #d9d9d9;
+    padding: 10px;
 }
 #content img {
     display: block; 
     width: 100%;
 }
-hr{
-    margin: 0;
-}
+hr{margin: 0}
 .noticia {
     padding: 10px;
-    border-bottom: solid 1px #cccccc
-
+    margin-bottom: 40px;
+    position: relative;
+}
+.noticia:after {
+    content: '';
+    position: absolute;
+    width: 95%;
+    bottom: -10px;
+    border-bottom: 1px solid #cccccc;
+}
+.noticia:last-child:after {
+    border-bottom: none;
+}
+main article{
+    display: flex;
 }
