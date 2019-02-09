@@ -24,14 +24,18 @@ a:hover {
     margin: 0;
     font-size: 1.25em;
 }
-#menu { margin-left: auto }
+#menu { 
+    margin-left: auto;
+}
 #menu ul {
     margin: 0;
     list-style: none;
     padding: 0;
     overflow: hidden;
 }
-#menu li { float: right}
+#menu li { 
+    float: right;
+}
 #menu ul li a {
     display: block;
     text-align: center;
@@ -57,14 +61,17 @@ a:hover {
     color: #d9d9d9;
     padding: 10px;
 }
-#content img {
-    display: block; 
+.JJOO {
     width: 100%;
 }
-hr{margin: 0}
+hr{
+    margin: 0;
+}
 .noticia {
-    padding: 10px;
-    margin-bottom: 40px;
+    display: flex;
+    padding: 20px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
     position: relative;
 }
 .noticia:after {
@@ -77,6 +84,45 @@ hr{margin: 0}
 .noticia:last-child:after {
     border-bottom: none;
 }
-main article{
+.noticia-img{
+    padding-left: 20px;
+    width: 300px;
+    height: 170px;
+}
+#noti1{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+#noti2{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+#noti3{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+#noti4{
+    background-size: cover;
+    width: 300px;
+    height: 170px;
+}
+.noticia-txt{
+    padding-left: 30px;
+}
+footer{
     display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(33, 33, 33);
+}
+
+footer p{
+    font-family: Arial;
+    font-size: 16px;
+    color: white;   
 }
