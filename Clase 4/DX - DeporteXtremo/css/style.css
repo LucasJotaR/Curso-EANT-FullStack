@@ -11,6 +11,11 @@ a {
 a:hover {
     color: #FF0000;
 }
+#top, 
+#content figcaption, 
+#copyright{
+    background-color: rgb(33, 33, 33);
+}
 #top {
     display: flex;
     flex-flow: row;
@@ -52,7 +57,6 @@ a:hover {
 #content figcaption {
     display: flex;
     align-items: center;
-    background-color: rgb(33, 33, 33);
     height: 100px;
 }
 #content h2 {
@@ -88,17 +92,29 @@ hr{
     margin-top: 10px 0px;
     font-size: 32px;
 }
-footer{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    width: 100%;
-    height: 40px;
-    background-color: rgb(33, 33, 33);
+#tabla-posiciones table{
+    border: solid 1px #cccccc;
+    border-collapse: collapse;
+    margin: auto;
+    width: 600px;
 }
+#tabla-posiciones tr{
+    border-bottom: solid 1px #cccccc
+}
+#tabla-posiciones td,
+#tabla-posiciones th{
+    padding: 10px;
+}
+#tabla-posiciones td:nth-of-type(odd){
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+}
+#copyright p{
+    color: white;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
 
-footer p{
-    font-family: Arial;
-    font-size: 16px;
-    color: white;   
 }
