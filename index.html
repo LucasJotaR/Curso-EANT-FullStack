@@ -49,29 +49,35 @@
           </nav>
       <!--FIN HEADER-MENU-->
 
-      <!--FIN SLIDER-PRINCIPAL-->
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <!--INICIO SLIDER-PRINCIPAL-->
+      <section id="slider" class="carousel slide carousel-fade" data-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/juegos-olimpicos.jpg" class="d-block w-100" alt="Sedes-JJOO">
-            <div class="carousel-caption d-none d-md-block">
-              <h2 class="p-3 mb-2 bg-dark text-white" class="w-auto p-3">Paris y Los Ángeles serán las próximas sedes de los Juegos Olímpicos</h5>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/ricardo-f1.jpg" class="d-block w-100" alt="Formula1">
-            <div class="carousel-caption d-none d-md-block">
-              <h2 class="p-3 mb-2 bg-dark text-white" class="w-auto p-3">Ricciardo marcó el ritmo en los libres de Azerbaiyán</h5>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/rally.jpg" class="d-block w-100" alt="RallyCordoba">
-            <div class="carousel-caption d-none d-md-block">
-              <h2 class="p-3 mb-2 bg-dark text-white" class="w-auto p-3">En Córdoba arrancó la 1er etapa del 38° Rally de la Argentina</h5>
-            </div>
-          </div>
+          <figure class="carousel-item active">
+            <img class="d-block w-100" src="img/juegos-olimpicos.jpg">
+            <figcaption class="bg-dark text-white p-4">
+              <h2>Paris y Los Ángeles serán las próximas sedes de los Juegos Olímpicos</h2>
+            </figcaption>
+          </figure>
+          <figure class="carousel-item">
+            <img class="d-block w-100" src="img/f1.jpg">
+            <figcaption class="bg-dark text-white p-4">
+              <h2>Ricciardo marcó el ritmo en los libres de Azerbaiyán</h2>
+            </figcaption>
+          </figure>
+          <figure class="carousel-item">
+            <img class="d-block w-100" src="img/rally.jpg">
+            <figcaption class="bg-dark text-white p-4">
+              <h2>En Córdoba arrancó la 1er etapa del 38° Rally de la Argentina</h2>
+            </figcaption>
+          </figure>
         </div>
-      </div>
+        <a class="carousel-control-prev" href="#slider" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#slider" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </section>
       <!--FIN SLIDER-PRINCIPAL-->
   
     <!--INICIO NOTICIAS-->
@@ -79,84 +85,53 @@
         <!--NOTICIA 1-->
         <article class="row py-3 mx-0 border-bottom">
             <div class="col-12 col-md-6 col-lg-4">
-                <img src="img/sorteo-libertadores.jpg" class="img-fluid">
+                <img src="https://via.placeholder.com/480x320" class="img-fluid">
             </div>
             <div class="col-12 col-md-6 col-lg-8">
-                <h3 class="h4 my-3">La tecnología llega a la actual edición de la Libertadores</h3>
-                <p class="small">por Joaquín Angeli</p>
-                <p>La Conmebol anunció la implementación del sistema VAR (asistencia arbitral por video) desde las semifinales de la actual Libertadores.</p>
+                <h3 class="h4 my-3">{{TITULO}}</h3>
+                <p class="small">por<a href="#">{{AUTOR}}</a></p>
+                <p>{{DETALLE}}</p>
             </div>
         </article>
-        <!--NOTICIA 2-->
-        <article class="row py-3 mx-0 border-bottom">
-            <div class="col-12 col-md-6 col-lg-4">
-                <img src="img/tickets-rusia-mundial.jpg" class="img-fluid">
-            </div>
-            <div class="col-12 col-md-6 col-lg-8">
-                <h3 class="h4 my-3">Comenzó la venta de entradas para el Mundial de Rusia 2018</h3>
-                <p class="small">por Laura Smasnatta</p>
-                <p>Hoy se abrió la venta al público de tickets, a través del sitio oficial de la FIFA. El proceso se dividirá en dos partes y los espectadores deberán solicitar una tarjeta de hincha 'Fan ID'</p>
-            </div>
-        </article>
-        <!--NOTICIA 3-->
-        <article class="row py-3 mx-0 border-bottom">
-            <div class="col-12 col-md-6 col-lg-4">
-                <img src="img/firpo.jpg" class="img-fluid">
-            </div>
-            <div class="col-12 col-md-6 col-lg-8">
-                <h3 class="h4 my-3">A 94 años del derechazo que convirtió en leyenda a Luis Ángel Firpo</h3>
-                <p class="small">por Diego Di Marco</p>
-                <p>El 14/9/1923 el boxeador argentino enfrento en Nueva York a Jack Dempsey, uno de los mejores pesos pesados de la historia.</p>
-            </div>
-        </article>
-        <!--NOTICIA 4-->
-        <article class="row py-3 mx-0 border-bottom">
-            <div class="col-12 col-md-6 col-lg-4">
-                <img src="img/buenos-aires.jpg" class="img-fluid">
-            </div>
-            <div class="col-12 col-md-6 col-lg-8">
-                <h3 class="h4 my-3">Buenos Aires 2018 presentó su innovador proyecto de parques y de ceremonia inaugural ante el COI</h3>
-                <p class="small">por Melina Morales</p>
-                <p>El Comité Organizador de los Juegos de la Juventud presentó su concepto de parques ante la 131a sesión del Comité Olímpico Internacional (COI) que se realizó en Lima. La ceremonia inaugural se realizará al aire libre.</p>
-            </div>
-        </article>
-    </main>
+        
     <!--FIN NOTICIAS-->
 
     <!--INICIO TABLA-DE-POSICIONES-->
-    <table class="table">
-      <thead class="bg-danger">
-        <tr>
-          <th class="col-12 d-flex justify-content-end">Primera Fecha</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Tigre, 1pts<br>Patronato, 3pts</td>
-          <th>2</th>
-          <td>Colón, 4pts<br>Estudiantes, 3pts</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Def. y Justicia, 4pts<br>Únion, 4pts</td>
-          <th>4</th>
-          <td>Argentinos Juniors, 0pts<br>Belgrano, 3pts</td>
-        </tr>
-        <tr>
-          <th scope="row">5</th>
-          <td>Newell's, 1pts<br>Olimpo, 1pts</td>
-          <th>6</th>
-          <td>San Lorenzo, 2pts<br>Arsenal, 0pts</td>
-        </tr>
-        <tr>
-          <th scope="row">7</td>
-          <td>Independiente, 4pts<br>Lanus, 0pts</td>
-          <th>8</th>
-          <td>Talleres, 3pts<br>Vélez, 3pts</td>
-          </tr>
-      </tbody>
-    </table>
+    <aside class="row">
+      <div class="col-xl-8 offset-xl-2">
+        <div class="table-responsive">
+          <table class="table table-hover">
+            <tr class="bg-danger text-white text-center">
+              <th colspan="4">3er Fecha</th>
+            </tr>
+            <tr class="table-secondary">
+              <td class="h2 text-center">1</td>
+              <td><strong>Tigre</strong>, 1pts<br><strong>Patronato</strong>, 3pts</td>
+              <td class="h2 text-center">2</td>
+              <td><strong>Colón</strong>, 4pts<br><strong>Estudiantes</strong>, 3pts</td>
+            </tr>
+            <tr class="table-secondary">
+              <td class="h2 text-center">3</td>
+              <td><strong>Def. y Justicia</strong>, 4pts<br><strong>Únion</strong>, 4pts</td>
+              <td class="h2 text-center">4</td>
+              <td><strong>Argentinos Juniors</strong>, 0pts<br><strong>Belgrano</strong>, 3pts</td>
+            </tr>
+            <tr class="table-secondary">
+              <td class="h2 text-center">5</td>
+              <td><strong>Newell's</strong>, 1pts<br><strong>Olimpo</strong>, 1pts</td>
+              <td class="h2 text-center">6</td>
+              <td><strong>San Lorenzo</strong>, 2pts<br><strong>Arsenal</strong>, 0pts</td>
+            </tr>
+            <tr class="table-secondary">
+              <td class="h2 text-center">7</td>
+              <td><strong>Independiente</strong>, 4pts<br><strong>Lanús</strong>, 0pts</td>
+              <td class="h2 text-center">8</td>
+              <td><strong>Talleres</strong>, 3pts<br><strong>Vélez</strong>, 3pts</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </aside>
     <!--FIN TABLA-DE-POSICIONES-->
 
     <!-- Optional JavaScript -->
@@ -164,5 +139,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+      
+    </script>
   </body>
 </html>
